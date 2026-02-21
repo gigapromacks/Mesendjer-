@@ -1,7 +1,6 @@
 {
   "name": "mesendjer",
   "version": "1.0.0",
-  "description": "Мессенджер",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
