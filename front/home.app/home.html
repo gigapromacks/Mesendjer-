@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURAms</title>
+    
+    
+    <link rel="stylesheet" href="/home.app/StyleHome.css">
+    
+    
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+</head>
+<body>
+    <div class="sidebar">
+      
+        <div class="chats">
+            <div class="chat"  data-username="chat 1">ЧАТ 1</div>
+            <div class="chat" data-username="chat 2">ЧАТ 2</div>
+        </div>
+        
+        <div class="crCh" onclick="PokazModalCrCh()">создать чат</div>
+    </div>
+    <div class="main-chat">
+        <div class="sticky">
+            <h4 class="title">ЧАТ НЕ ВЫБРАН</h4>
+            <div class="profil" onclick="OtProfil()">A</div>
+
+        </div>
+        <div class="messages">
+        
+            <p  > ЧАТ НЕ ВЫБРАН</p>
+           
+        </div>
+        <input type="text" placeholder="Сообщение..." id = "Send">
+    </div>
+
+ <div class="modal-createChat" style="display: none;">
+    <div onclick="zakrCrCH()">×</div>
+    <input type="text" placeholder="название чата(до 10 символов)" id="nameChat">
+    <input type="text" placeholder="username чата(до 10 символов)" id="nameUserName">
+    <input type="text" placeholder="введите username пользователей которых нужно добавить" id="UseCh">
+    <button id="butAddUs" onclick="AddUsers()">добавить</button>
+    <div id="vseUse">
+
+    </div>
+    
+    <button id="butCrCh" onclick="crCh()">создать</button>
+</div >
+    
+
+<div class="modal-profil">
+    <div class="modal-profil-header">
+        <span class="modal-profil-close" onclick="zakrProfil()">×</span>
+    </div>
+    <div class="modal-profil-content">
+        <div class="modal-profil-avatar">A</div>
+        <div class="modal-profil-info">
+            <div class="modal-profil-row">
+                <span class="modal-profil-label">Username:</span>
+                <span class="modal-profil-value" id="profil-username">@admin</span>
+            </div>
+            <div class="modal-profil-row">
+                <span class="modal-profil-label">Email:</span>
+                <span class="modal-profil-value" id="profil-email">admin@mail.com</span>
+            </div>
+         <div class="modal-profil-row">
+                <span class="modal-profil-label">Пароль</span>
+                <span class="modal-profil-value" id="profil-password">123456</span>
+        
+        </div>
+               
+        
+        </div>
+    </div>
+    <div class="modal-profil-footer">
+        <button class="modal-profil-btn" onclick="delAk()">удалить аккаунт</button>
+        <button class="modal-profil-btn" onclick="nastroyki()">Настройки</button>
+    </div>
+
+</div>
+
+<div class="modal-nast" style="display: none;">
+    <div class="modal-nast-header">
+        <span class="modal-nast-close" onclick="zakrNast()">×</span>
+    </div>
+    <div class="modal-nast-content">
+        <div class="modal-nast-icon">⚙️</div>
+        <p class="modal-nast-text">В РАЗРАБОТКЕ</p>
+        <div class="modal-nast-loader"></div>
+    </div>
+</div>
+
+<script src="/home.app/NodeHome.js"></script>
+</body>
+</html>
