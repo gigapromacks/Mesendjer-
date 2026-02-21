@@ -1,5 +1,12 @@
 {
+  "name": "mesendjer",
+  "version": "1.0.0",
+  "description": "Мессенджер",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"  // ЭТО ВАЖНО!
+  },
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^4.18.2"
   }
 }
