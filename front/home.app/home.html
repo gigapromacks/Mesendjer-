@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURAms</title>
+    
+    
+    <link rel="stylesheet" href="/home.app/StyleHome.css">
+    
+    
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+</head>
+<body>
+    <div class="sidebar">
+      
+        <div class="chats">
+            <div class="chat"  data-username="chat 1">ЧАТ 1</div>
+            <div class="chat" data-username="chat 2">ЧАТ 2</div>
+        </div>
+        <div class="crCh" onclick="delAk()">удалить аккаунт</div>
+        <div class="crCh" onclick="PokazModalCrCh()">создать чат</div>
+    </div>
+    <div class="main-chat">
+        <div class="messages">
+            <p  > ЧАТ НЕ ВЫБРАН</p>
+           
+        </div>
+        <input type="text" placeholder="Сообщение..." id = "Send">
+    </div>
+
+ <div class="modal-createChat" style="display: none;">
+    <div onclick="zakrCrCH()">×</div>
+    <input type="text" placeholder="название чата" id="nameChat">
+    <input type="text" placeholder="username чата" id="nameUserName">
+    <input type="text" placeholder="введите username пользователей которых нужно добавить" id="UseCh">
+    <button id="butAddUs" onclick="AddUsers()">добавить</button>
+    <div id="vseUse">
+
+    </div>
+    
+    <button id="butCrCh" onclick="crCh()">создать</button>
+</div>
+    <script src="/home.app/NodeHome.js"></script>
+</body>
+</html>
