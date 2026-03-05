@@ -1,6 +1,7 @@
 {
-  "name": "mesendjer",
+  "name": "aurams",
   "version": "1.0.0",
+  "description": "мессенджер",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
