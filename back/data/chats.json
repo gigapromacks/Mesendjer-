@@ -1,0 +1,24 @@
+[
+  {
+    "name": "АДМИНЫ",
+    "username": "Admins",
+    "users": [
+      "жопа",
+      "Admin"
+    ],
+    "id": 1
+  },
+  {
+    "name": "Admins",
+    "username": "admins",
+    "users": [
+      "Admin",
+      "admin",
+      "1",
+      "11",
+      "жопа",
+      "Jopa"
+    ],
+    "id": 1772971834718
+  }
+]
